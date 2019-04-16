@@ -46,7 +46,7 @@ namespace LightNovelSnifferCore_CLI
                 ConfigTools.InitConf("Config.xml");
                 ConfigTools.InitConf("Config_user.xml");
                 ConfigTools.InitLightNovels("LightNovels.xml", true);
-                ConfigTools.InitLightNovels("LightNovels_user.xml", true);
+                ConfigTools.InitLightNovels("LightNovels_user.xml", false);
                 consoleTools = new ConsoleTools(fileWriter, 1);
                 ConsoleTools ctForCore = new ConsoleTools(fileWriter, 3);
                 lightNovelSniffer = new LNS(ctForCore, ctForCore);
